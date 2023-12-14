@@ -1,0 +1,15 @@
+$background: #313352;
+$primary: #f5643d;
+$secondary: #f9f0ee;
+$white-color: #fff;
+$highlight: #48c7f3;
+$mobile: 756px;
+
+:export {
+  background: $background;
+  primary: $primary;
+  secondary: $secondary;
+  whiteColor: $white-color;
+  highlight: $highlight;
+  mobile: $mobile;
+}

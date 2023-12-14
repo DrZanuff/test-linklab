@@ -1,0 +1,19 @@
+@import '@/app/styles/variables.module.scss';
+
+.headerCategoryContainer {
+  display: flex;
+  width: 100%;
+
+  input {
+    display: none;
+  }
+}
+
+.subMenu {
+  position: absolute;
+  width: 100%;
+  background-color: $background;
+  border: 2px solid red;
+  left: 0px;
+  bottom: 0px;
+}

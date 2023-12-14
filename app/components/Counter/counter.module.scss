@@ -1,7 +1,13 @@
+@import '@/app/styles/variables.module.scss';
+
 .row {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+  }
 }
 
 .row > button {

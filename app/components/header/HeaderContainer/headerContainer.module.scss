@@ -1,0 +1,9 @@
+@import '@/app/styles/variables.module.scss';
+
+.headerContainerContainer {
+  display: flex;
+  width: 100%;
+  background-color: $background;
+  justify-content: center;
+  height: 504px;
+}

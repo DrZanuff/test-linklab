@@ -1,0 +1,30 @@
+.desktopHeaderContainer {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  height: 98px;
+  align-items: flex-end;
+  position: relative;
+}
+
+.desktopHeaderInnerWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.headerNavContainer {
+  display: flex;
+  gap: 64px;
+}
+
+.navContainer {
+  display: flex;
+  width: 100%;
+
+  ul {
+    display: flex;
+    gap: 45px;
+    list-style-type: none;
+  }
+}
