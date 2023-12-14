@@ -1,0 +1,12 @@
+import type { {{name}}Props } from './{{name}}.types'
+import styles from './{{lowerCaseFirst name}}.module.scss'
+
+export function {{name}} ( { value } : {{name}}Props ) {
+
+  return (
+     <div className={styles.{{lowerCaseFirst name}}Container}>
+      <h1>{{name}}</h1>
+      <h2>{value}</h2>
+    </div>
+  )
+}

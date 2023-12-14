@@ -12,7 +12,7 @@ import {
   incrementAsync,
   incrementIfOddAsync,
 } from '@/lib/redux'
-import styles from './counter.module.css'
+import styles from './counter.module.scss'
 
 export const Counter = () => {
   const dispatch = useDispatch()
@@ -25,16 +25,14 @@ export const Counter = () => {
         <button
           className={styles.button}
           aria-label="Decrement value"
-          onClick={() => dispatch(counterSlice.actions.decrement())}
-        >
+          onClick={() => dispatch(counterSlice.actions.decrement())}>
           -
         </button>
         <span className={styles.value}>{count}</span>
         <button
           className={styles.button}
           aria-label="Increment value"
-          onClick={() => dispatch(counterSlice.actions.increment())}
-        >
+          onClick={() => dispatch(counterSlice.actions.increment())}>
           +
         </button>
       </div>
@@ -49,20 +47,17 @@ export const Counter = () => {
           className={styles.button}
           onClick={() =>
             dispatch(counterSlice.actions.incrementByAmount(incrementAmount))
-          }
-        >
+          }>
           Add Amount
         </button>
         <button
           className={styles.asyncButton}
-          onClick={() => dispatch(incrementAsync(incrementAmount))}
-        >
+          onClick={() => dispatch(incrementAsync(incrementAmount))}>
           Add Async
         </button>
         <button
           className={styles.button}
-          onClick={() => dispatch(incrementIfOddAsync(incrementAmount))}
-        >
+          onClick={() => dispatch(incrementIfOddAsync(incrementAmount))}>
           Add If Odd
         </button>
       </div>
