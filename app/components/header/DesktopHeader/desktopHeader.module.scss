@@ -1,3 +1,5 @@
+@import '@/app/styles/variables.module.scss';
+
 .desktopHeaderContainer {
   display: flex;
   width: 100%;
@@ -5,6 +7,10 @@
   height: 98px;
   align-items: flex-end;
   position: relative;
+
+  @media (max-width: $mobile) {
+    display: none;
+  }
 }
 
 .desktopHeaderInnerWrapper {
@@ -18,13 +24,55 @@
   gap: 64px;
 }
 
+.headerNavContainer_svg {
+  width: 100%;
+  height: auto;
+}
+
 .navContainer {
   display: flex;
   width: 100%;
+  align-items: center;
+}
 
-  ul {
-    display: flex;
-    gap: 45px;
-    list-style-type: none;
+.navContaine_ul {
+  display: flex;
+  gap: 45px;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navContaine_li {
+  white-space: nowrap;
+  color: $white-color;
+  cursor: pointer;
+  transition: filter 0.2s ease-in-out;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+}
+
+.budgedButton {
+  background-color: $white-color-09;
+  border-radius: 7px;
+  color: $white-color;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  cursor: pointer;
+
+  transition: filter 0.2s ease-in-out;
+
+  &:hover {
+    filter: brightness(0.8);
   }
 }

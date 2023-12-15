@@ -3,11 +3,12 @@
 import { DesktopHeader } from '../DesktopHeader'
 import { MobileHeader } from '../MobileHeader'
 import { useViewport } from '@/app/hooks/useViewport'
-import type { HeaderContainerProps } from './HeaderContainer.types'
 import styles from './headerContainer.module.scss'
 
-export function HeaderContainer({ value }: HeaderContainerProps) {
+export function HeaderContainer() {
   const viewport = useViewport()
+
+  console.log('DBG:', { viewport })
 
   return (
     <div className={styles.headerContainerContainer}>

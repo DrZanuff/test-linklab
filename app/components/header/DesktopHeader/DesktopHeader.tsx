@@ -3,11 +3,14 @@ import { HalogennLogo } from '@/app/assets/header/HalogennLogo'
 import { HalogennLogoWhite } from '@/app/assets/header/HalogennLogoWhite'
 import { HeaderCategory } from '../HeaderCategory'
 import Link from 'next/link'
+import { selectDesktopHeader, useSelector } from '@/lib/redux'
 import { headerLinks } from '../headerLinks'
 import type { DesktopHeaderProps } from './DesktopHeader.types'
 import styles from './desktopHeader.module.scss'
 
 export function DesktopHeader({ value }: DesktopHeaderProps) {
+  const isDesktopOpen = useSelector(selectDesktopHeader)
+
   const renderLinks = () => {
     return headerLinks.map((headerLink, linkIndex) => {
       if (headerLink?.categories) {
@@ -21,7 +24,7 @@ export function DesktopHeader({ value }: DesktopHeaderProps) {
       }
 
       return (
-        <li key={linkIndex}>
+        <li key={linkIndex} className={styles.navContaine_li}>
           {headerLink.enabled && headerLink.link ? (
             <Link href={headerLink.link}>{headerLink?.text}</Link>
           ) : (
@@ -36,12 +39,16 @@ export function DesktopHeader({ value }: DesktopHeaderProps) {
     <header className={styles.desktopHeaderContainer}>
       <div className={styles.desktopHeaderInnerWrapper}>
         <div className={styles.headerNavContainer}>
-          <HalogennLogoWhite />
+          {isDesktopOpen ? (
+            <HalogennLogo className={styles.headerNavContainer_svg} />
+          ) : (
+            <HalogennLogoWhite className={styles.headerNavContainer_svg} />
+          )}
           <nav className={styles.navContainer}>
-            <ul>{renderLinks()}</ul>
+            <ul className={styles.navContaine_ul}>{renderLinks()}</ul>
           </nav>
         </div>
-        <div>Orçamentos</div>
+        <span className={styles.budgedButton}>Orçamentos</span>
       </div>
     </header>
   )

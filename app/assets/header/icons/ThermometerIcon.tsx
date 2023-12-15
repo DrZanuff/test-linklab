@@ -1,5 +1,6 @@
-export const ThermometerIcon = () => (
+export const ThermometerIcon = (props: { className?: string }) => (
   <svg
+    {...props}
     width="20"
     height="20"
     viewBox="0 0 20 20"

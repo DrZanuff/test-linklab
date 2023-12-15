@@ -1,6 +1,2 @@
 /* Instruments */
-import { counterSlice } from './slices'
-
-export const reducer = {
-  counter: counterSlice.reducer,
-}
+export { counterSlice, desktopHeaderSlice } from './slices'

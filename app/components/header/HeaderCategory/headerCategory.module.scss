@@ -9,15 +9,59 @@
   }
 }
 
+.headerCategoryContainer_label {
+  cursor: pointer;
+  color: $white-color;
+  transition: filter 0.2s ease-in-out;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+}
+
+.headerCategoryContainer_label_svg {
+  width: 8px;
+  transition: transform 0.3s ease-in-out;
+
+  path {
+    stroke: $white-color;
+    transition: stroke 0.3s ease-in-out;
+  }
+}
+
+.headerCategoryContainer_label_svg_selected {
+  transform: rotate(180deg);
+
+  path {
+    stroke: $primary;
+  }
+}
+
+.headerCategoryContainer_label_selected {
+  color: $primary;
+}
+
 .subMenuContainer {
   position: absolute;
   width: 100%;
   background-color: $background;
-  border-top: 2px solid $white-color;
+  border-top: 1px solid $white-color;
   left: 0px;
-  bottom: 0px;
+  top: 120px;
   padding-top: 65px;
   display: flex;
+  pointer-events: all;
+  opacity: 1;
+
+  transition: opacity 0.15s ease-in-out;
+}
+
+.subMenuContainer_closed {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .subMenuInnerWrapper {
@@ -29,56 +73,68 @@
 .categorySeo {
   color: $white-color;
   width: 200px;
-  font-family: DM Sans;
+  font-family: $dmSans;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 110.2%; /* 22.04px */
+  white-space: normal;
+  margin: 0px;
 }
 
 .subCategoriesContainer {
   display: flex;
-  gap: 66px;
+  gap: 46px;
 }
 
 .subCategory {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 
-  h3 {
+  > h3 {
     color: $white-color;
-    font-family: DM Sans;
+    font-family: $dmSans;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 98.7%; /* 15.792px */
+    margin: 0px;
   }
 }
 
 .subCategoriesLinks {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
-  row-gap: 30px;
+  gap: 20px;
   column-gap: 30px;
   max-width: 300px;
   list-style-type: none;
+  padding: 0px;
 }
 
 .subCategoryLink {
   display: flex;
+  align-items: center;
   gap: 4px;
+  min-width: 130px;
 
   color: $white-color-75;
-  font-family: DM Sans;
+  font-family: $dmSans;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 
   svg {
-    width: 20px;
-    height: 20px;
+    max-width: 20px;
+    max-height: 20px;
+  }
+
+  cursor: pointer;
+  transition: filter 0.2s ease-in-out;
+
+  &:hover {
+    filter: brightness(0.8);
   }
 }

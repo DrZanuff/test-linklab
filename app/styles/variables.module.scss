@@ -3,8 +3,10 @@ $primary: #f5643d;
 $secondary: #f9f0ee;
 $white-color: #fff;
 $white-color-75: rgba(255, 255, 255, 0.75);
+$white-color-09: rgba(255, 255, 255, 0.09);
 $highlight: #48c7f3;
 $mobile: 756px;
+$dmSans: var(--font-dmSans);
 
 :export {
   background: $background;
@@ -12,6 +14,8 @@ $mobile: 756px;
   secondary: $secondary;
   whiteColor: $white-color;
   whiteColor75: $white-color-75;
+  whiteColor09: $white-color-09;
   highlight: $highlight;
   mobile: $mobile;
+  dmSans: $dmSans;
 }

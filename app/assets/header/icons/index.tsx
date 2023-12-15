@@ -5,6 +5,7 @@ import { InoxIcon } from './InoxIcon'
 import { PlasticIcon } from './PlasticIcon'
 import { PorcelainIcon } from './PorcelainIcon'
 import { ThermometerIcon } from './ThermometerIcon'
+import { CaretDownIcon } from './CaretDownIcon'
 
 export {
   AccessoriesIcon,
@@ -14,4 +15,5 @@ export {
   PlasticIcon,
   PorcelainIcon,
   ThermometerIcon,
+  CaretDownIcon,
 }
