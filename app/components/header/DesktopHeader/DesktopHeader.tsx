@@ -1,14 +1,13 @@
-import { useState } from 'react'
 import { HalogennLogo } from '@/app/assets/header/HalogennLogo'
 import { HalogennLogoWhite } from '@/app/assets/header/HalogennLogoWhite'
 import { HeaderCategory } from '../HeaderCategory'
+import { BudgetButton } from '../BudgetButton'
 import Link from 'next/link'
 import { selectDesktopHeader, useSelector } from '@/lib/redux'
 import { headerLinks } from '../headerLinks'
-import type { DesktopHeaderProps } from './DesktopHeader.types'
 import styles from './desktopHeader.module.scss'
 
-export function DesktopHeader({ value }: DesktopHeaderProps) {
+export function DesktopHeader() {
   const isDesktopOpen = useSelector(selectDesktopHeader)
 
   const renderLinks = () => {
@@ -48,7 +47,7 @@ export function DesktopHeader({ value }: DesktopHeaderProps) {
             <ul className={styles.navContaine_ul}>{renderLinks()}</ul>
           </nav>
         </div>
-        <span className={styles.budgedButton}>Orçamentos</span>
+        <BudgetButton type="desktop" />
       </div>
     </header>
   )

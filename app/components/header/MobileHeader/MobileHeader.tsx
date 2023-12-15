@@ -1,12 +1,16 @@
-import type { MobileHeaderProps } from './MobileHeader.types'
+import { BudgetButton } from '../BudgetButton'
+import { HalogennLogoWhite } from '@/app/assets/header/HalogennLogoWhite'
 import styles from './mobileHeader.module.scss'
 
-export function MobileHeader ( { value } : MobileHeaderProps ) {
-
+export function MobileHeader() {
   return (
-     <div className={styles.mobileHeaderContainer}>
-      <h1>MobileHeader</h1>
-      <h2>{value}</h2>
-    </div>
+    <header className={styles.mobileHeaderContainer}>
+      <div className={styles.mobileHeaderInnerWrapper}>
+        <HalogennLogoWhite className={styles.mobileLogo} />
+        <div className={styles.mobileHeaderButtons}>
+          <BudgetButton type="mobile" />
+        </div>
+      </div>
+    </header>
   )
 }

@@ -1,19 +1,9 @@
-import { AccessoriesIcon } from './AccessoriesIcon'
-import { EquipamentsIcon } from './EquipamentsIcon'
-import { GlassIcon } from './GlassIcon'
-import { InoxIcon } from './InoxIcon'
-import { PlasticIcon } from './PlasticIcon'
-import { PorcelainIcon } from './PorcelainIcon'
-import { ThermometerIcon } from './ThermometerIcon'
-import { CaretDownIcon } from './CaretDownIcon'
-
-export {
-  AccessoriesIcon,
-  EquipamentsIcon,
-  GlassIcon,
-  InoxIcon,
-  PlasticIcon,
-  PorcelainIcon,
-  ThermometerIcon,
-  CaretDownIcon,
-}
+export { AccessoriesIcon } from './AccessoriesIcon'
+export { EquipamentsIcon } from './EquipamentsIcon'
+export { GlassIcon } from './GlassIcon'
+export { InoxIcon } from './InoxIcon'
+export { PlasticIcon } from './PlasticIcon'
+export { PorcelainIcon } from './PorcelainIcon'
+export { ThermometerIcon } from './ThermometerIcon'
+export { CaretDownIcon } from './CaretDownIcon'
+export { BudgetIcon } from './BudgetIcon'

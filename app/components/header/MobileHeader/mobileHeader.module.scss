@@ -1,3 +1,22 @@
 .mobileHeaderContainer {
   display: flex;
+  padding: 50px 30px 0px;
+  flex-direction: column;
+  width: 100%;
+}
+
+.mobileHeaderInnerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobileHeaderButtons {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
+.mobileLogo {
+  width: 144px;
 }
