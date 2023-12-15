@@ -1,0 +1,7 @@
+@import '@/app/styles/variables.module.scss';
+
+.mainContentContainer {
+  display: flex;
+  width: 100%;
+  max-width: $desktopContainer;
+}

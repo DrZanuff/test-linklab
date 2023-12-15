@@ -1,8 +1,7 @@
-/* Components */
-import { Counter } from './components/Counter/Counter'
+import { MainContent } from './components/MainContent'
 
 export default function IndexPage() {
-  return <Counter />
+  return <MainContent />
 }
 
 export const metadata = {

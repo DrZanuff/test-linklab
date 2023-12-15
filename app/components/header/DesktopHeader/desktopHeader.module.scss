@@ -3,10 +3,11 @@
 .desktopHeaderContainer {
   display: flex;
   width: 100%;
-  max-width: 1200px;
+  max-width: $desktopContainer;
   height: 98px;
   align-items: flex-end;
   position: relative;
+  margin-top: 55px;
 
   @media (max-width: $mobile) {
     display: none;
@@ -52,4 +53,18 @@
   &:hover {
     filter: brightness(0.8);
   }
+}
+
+.decalContainer {
+  width: 180px;
+  height: 250px;
+  overflow: hidden;
+  position: absolute;
+  top: -50px;
+  right: -350px;
+}
+
+.decal {
+  transform-origin: bottom left;
+  bottom: 0px;
 }

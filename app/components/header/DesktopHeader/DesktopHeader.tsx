@@ -1,5 +1,6 @@
 import { HalogennLogo } from '@/app/assets/header/HalogennLogo'
 import { HalogennLogoWhite } from '@/app/assets/header/HalogennLogoWhite'
+import { Decals } from '@/app/assets/site/Decals'
 import { HeaderCategory } from '../HeaderCategory'
 import { BudgetButton } from '../BudgetButton'
 import Link from 'next/link'
@@ -37,6 +38,9 @@ export function DesktopHeader() {
 
   return (
     <header className={styles.desktopHeaderContainer}>
+      <div className={styles.decalContainer}>
+        <Decals className={styles.decal} />
+      </div>
       <div className={styles.desktopHeaderInnerWrapper}>
         <div className={styles.headerNavContainer}>
           {isDesktopOpen ? (

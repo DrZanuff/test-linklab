@@ -4,6 +4,19 @@
   display: flex;
   width: 100%;
   background-color: $background;
-  justify-content: center;
+  align-items: center;
   height: 504px;
+  flex-direction: column;
+
+  @media (max-width: $mobile) {
+    height: fit-content;
+  }
+}
+
+.mobileDecal {
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }

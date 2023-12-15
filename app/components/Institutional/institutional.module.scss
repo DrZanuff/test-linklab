@@ -1,0 +1,39 @@
+@import '@/app/styles/variables.module.scss';
+
+.institutionalContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 10px;
+  margin: 112px 0px 160px;
+  padding: 0px 30px 0px;
+}
+
+.institutional {
+  color: $lightBlue;
+  font-family: $dmSans;
+  white-space: normal;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125.2%; /* 40.064px */
+  margin: 0px;
+  max-width: 302px;
+
+  > b {
+    font-weight: 400;
+    color: $highlight;
+  }
+}
+
+.institutionalParagraph {
+  color: $white-color;
+  max-width: 231px;
+  white-space: normal;
+  margin: 0px;
+  font-family: $dmSans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 157.7%; /* 25.232px */
+}

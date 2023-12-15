@@ -5,7 +5,9 @@ $white-color: #fff;
 $white-color-75: rgba(255, 255, 255, 0.75);
 $white-color-09: rgba(255, 255, 255, 0.09);
 $highlight: #48c7f3;
+$lightBlue: #e3f7ff;
 $mobile: 756px;
+$desktopContainer: 1200px;
 $dmSans: var(--font-dmSans);
 
 :export {
@@ -16,6 +18,8 @@ $dmSans: var(--font-dmSans);
   whiteColor75: $white-color-75;
   whiteColor09: $white-color-09;
   highlight: $highlight;
+  lightBlue: $lightBlue;
   mobile: $mobile;
+  desktopContainer: $desktopContainer;
   dmSans: $dmSans;
 }
