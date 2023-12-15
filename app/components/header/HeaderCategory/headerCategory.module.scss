@@ -9,11 +9,76 @@
   }
 }
 
-.subMenu {
+.subMenuContainer {
   position: absolute;
   width: 100%;
   background-color: $background;
-  border: 2px solid red;
+  border-top: 2px solid $white-color;
   left: 0px;
   bottom: 0px;
+  padding-top: 65px;
+  display: flex;
+}
+
+.subMenuInnerWrapper {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.categorySeo {
+  color: $white-color;
+  width: 200px;
+  font-family: DM Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110.2%; /* 22.04px */
+}
+
+.subCategoriesContainer {
+  display: flex;
+  gap: 66px;
+}
+
+.subCategory {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  h3 {
+    color: $white-color;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 98.7%; /* 15.792px */
+  }
+}
+
+.subCategoriesLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  row-gap: 30px;
+  column-gap: 30px;
+  max-width: 300px;
+  list-style-type: none;
+}
+
+.subCategoryLink {
+  display: flex;
+  gap: 4px;
+
+  color: $white-color-75;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
 }

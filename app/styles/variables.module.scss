@@ -2,6 +2,7 @@ $background: #313352;
 $primary: #f5643d;
 $secondary: #f9f0ee;
 $white-color: #fff;
+$white-color-75: rgba(255, 255, 255, 0.75);
 $highlight: #48c7f3;
 $mobile: 756px;
 
@@ -10,6 +11,7 @@ $mobile: 756px;
   primary: $primary;
   secondary: $secondary;
   whiteColor: $white-color;
+  whiteColor75: $white-color-75;
   highlight: $highlight;
   mobile: $mobile;
 }

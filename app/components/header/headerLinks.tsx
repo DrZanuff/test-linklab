@@ -20,11 +20,13 @@ interface ISubCategory extends ILink {
 
 export interface ICategory extends ILink {
   title: string
+
   subCategories?: ISubCategory[]
 }
 
 interface IHeaderLinks extends ILink {
   categories?: ICategory[]
+  seo?: string
 }
 
 export const headerLinks: IHeaderLinks[] = [
@@ -37,6 +39,7 @@ export const headerLinks: IHeaderLinks[] = [
     text: 'Produtos',
     link: '/produtos',
     enabled: false,
+    seo: 'Catálogo completo de itens para você',
     categories: [
       {
         title: 'Laborátório',

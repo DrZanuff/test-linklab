@@ -15,6 +15,7 @@ export function DesktopHeader({ value }: DesktopHeaderProps) {
           <HeaderCategory
             categories={headerLink?.categories}
             text={String(headerLink?.text)}
+            seo={String(headerLink?.seo)}
           />
         )
       }
