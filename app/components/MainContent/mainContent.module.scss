@@ -5,4 +5,9 @@
   width: 100%;
   justify-content: center;
   margin-top: 340px;
+
+  @media (max-width: $desktopContainer) {
+    flex-direction: column;
+    margin-top: 20px;
+  }
 }
