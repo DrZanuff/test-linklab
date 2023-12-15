@@ -117,8 +117,10 @@
   @media (max-width: $mobile) {
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     gap: 20px;
-    padding: 35px;
+    padding: 35px 0px 35px 35px;
+    width: 100%;
   }
 }
 
@@ -144,5 +146,14 @@
 
   @media (max-width: $mobile) {
     display: none;
+  }
+}
+
+.decalMobile {
+  display: none;
+
+  @media (max-width: $mobile) {
+    display: flex;
+    padding-right: 20px;
   }
 }

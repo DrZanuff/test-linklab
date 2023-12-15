@@ -3,6 +3,8 @@ import { GlassBannerIcon } from '@/app/assets/banner/GlassBannerIcon'
 import { ToolsIcons } from '@/app/assets/banner/ToolsIcons'
 import { Stamp } from '@/app/assets/site/Stamp'
 import styles from './heroBanner.module.scss'
+import { DecalsMobileLight } from '@/app/assets/banner/DecalsMobileLight'
+import { DecalsMobileDark } from '@/app/assets/banner/DecalsMobileDark'
 
 export function HeroBanner() {
   return (
@@ -16,6 +18,10 @@ export function HeroBanner() {
           </div>
 
           <h3>Vidrarias e Equipamentos</h3>
+
+          <div className={styles.decalMobile}>
+            <DecalsMobileLight />
+          </div>
         </div>
       </div>
 
@@ -28,6 +34,10 @@ export function HeroBanner() {
           </div>
 
           <h3>Materiais Químicos</h3>
+
+          <div className={styles.decalMobile}>
+            <DecalsMobileLight />
+          </div>
         </div>
       </div>
 
@@ -40,6 +50,10 @@ export function HeroBanner() {
           </div>
 
           <h3>Ferramentas e utensílios</h3>
+
+          <div className={styles.decalMobile}>
+            <DecalsMobileDark />
+          </div>
         </div>
       </div>
 
