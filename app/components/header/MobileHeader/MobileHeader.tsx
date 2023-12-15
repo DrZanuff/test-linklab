@@ -1,4 +1,5 @@
 import { BudgetButton } from '../BudgetButton'
+import { MobileMenuButton } from '../MobileMenuButton'
 import { HalogennLogoWhite } from '@/app/assets/header/HalogennLogoWhite'
 import styles from './mobileHeader.module.scss'
 
@@ -9,6 +10,7 @@ export function MobileHeader() {
         <HalogennLogoWhite className={styles.mobileLogo} />
         <div className={styles.mobileHeaderButtons}>
           <BudgetButton type="mobile" />
+          <MobileMenuButton />
         </div>
       </div>
     </header>
