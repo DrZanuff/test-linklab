@@ -11,3 +11,14 @@
   outline: inherit;
   background: none;
 }
+
+.mobileMenuButton {
+  width: 28px;
+  height: 28px;
+}
+
+.closeMobileButton {
+  path {
+    fill: $primary;
+  }
+}

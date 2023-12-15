@@ -18,6 +18,7 @@ export function DesktopHeader() {
             categories={headerLink?.categories}
             text={String(headerLink?.text)}
             seo={String(headerLink?.seo)}
+            key={linkIndex}
           />
         )
       }

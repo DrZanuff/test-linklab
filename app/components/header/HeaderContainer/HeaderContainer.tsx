@@ -8,8 +8,6 @@ import styles from './headerContainer.module.scss'
 export function HeaderContainer() {
   const viewport = useViewport()
 
-  console.log('DBG:', { viewport })
-
   return (
     <div className={styles.headerContainerContainer}>
       {viewport === 'desktop' ? <DesktopHeader /> : <MobileHeader />}

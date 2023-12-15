@@ -44,14 +44,14 @@
   color: $primary;
 }
 
-.subMenuContainer {
+.subMenuWrapper {
   position: absolute;
   width: 100%;
-  background-color: $background;
   border-top: 1px solid $white-color;
   left: 0px;
   top: 120px;
   padding-top: 65px;
+
   display: flex;
   pointer-events: all;
   opacity: 1;
@@ -59,82 +59,7 @@
   transition: opacity 0.15s ease-in-out;
 }
 
-.subMenuContainer_closed {
+.subMenuWrapper_closed {
   opacity: 0;
   pointer-events: none;
-}
-
-.subMenuInnerWrapper {
-  display: flex;
-  width: 100%;
-  gap: 20px;
-}
-
-.categorySeo {
-  color: $white-color;
-  width: 200px;
-  font-family: $dmSans;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 110.2%; /* 22.04px */
-  white-space: normal;
-  margin: 0px;
-}
-
-.subCategoriesContainer {
-  display: flex;
-  gap: 46px;
-}
-
-.subCategory {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-
-  > h3 {
-    color: $white-color;
-    font-family: $dmSans;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 98.7%; /* 15.792px */
-    margin: 0px;
-  }
-}
-
-.subCategoriesLinks {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  column-gap: 30px;
-  max-width: 300px;
-  list-style-type: none;
-  padding: 0px;
-}
-
-.subCategoryLink {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  min-width: 130px;
-
-  color: $white-color-75;
-  font-family: $dmSans;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-
-  svg {
-    max-width: 20px;
-    max-height: 20px;
-  }
-
-  cursor: pointer;
-  transition: filter 0.2s ease-in-out;
-
-  &:hover {
-    filter: brightness(0.8);
-  }
 }

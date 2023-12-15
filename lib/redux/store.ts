@@ -7,12 +7,17 @@ import {
 } from 'react-redux'
 
 /* Instruments */
-import { counterSlice, desktopHeaderSlice } from './rootReducer'
+import {
+  counterSlice,
+  desktopHeaderSlice,
+  mobileHeaderSlice,
+} from './rootReducer'
 
 export const reduxStore = configureStore({
   reducer: {
     counter: counterSlice.reducer,
     desktopHeader: desktopHeaderSlice.reducer,
+    mobileHeader: mobileHeaderSlice.reducer,
   },
 })
 export const useDispatch = () => useReduxDispatch<ReduxDispatch>()

@@ -1,15 +1,15 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-export interface DesktopHeaderState {
+export interface MobileHeaderState {
   open: boolean
 }
 
-const initialState: DesktopHeaderState = {
+const initialState: MobileHeaderState = {
   open: false,
 }
 
-export const desktopHeaderSlice = createSlice({
-  name: 'desktopHeader',
+export const mobileHeaderSlice = createSlice({
+  name: 'mobileHeaderSlice',
   initialState,
   reducers: {
     open: (state) => {

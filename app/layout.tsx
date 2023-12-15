@@ -17,7 +17,7 @@ export default function RootLayout(props: React.PropsWithChildren) {
       <html lang="pt-BR" className={dmSans.className}>
         <body className={styles.app}>
           <section className={styles.container}>
-            <HeaderContainer value="Redux" />
+            <HeaderContainer />
             <main className={styles.main}>{props.children}</main>
           </section>
         </body>
