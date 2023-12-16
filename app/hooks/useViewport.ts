@@ -7,7 +7,7 @@ export const useViewport = (): Viewport => {
 
   useEffect(() => {
     const handleResize = () => {
-      const width = window.innerWidth
+      const width = window?.innerWidth
       const isMobile = width <= 756
 
       setViewport(isMobile ? 'mobile' : 'desktop')
@@ -17,11 +17,11 @@ export const useViewport = (): Viewport => {
     handleResize()
 
     // Event listener for window resize
-    window.addEventListener('resize', handleResize)
+    window?.addEventListener('resize', handleResize)
 
     // Cleanup the event listener on component unmount
     return () => {
-      window.removeEventListener('resize', handleResize)
+      window?.removeEventListener('resize', handleResize)
     }
   }, [])
 

@@ -4,11 +4,13 @@ $secondary: #f9f0ee;
 $white-color: #fff;
 $white-color-75: rgba(255, 255, 255, 0.75);
 $white-color-09: rgba(255, 255, 255, 0.09);
+$gray-color: #a1a1a1;
 $highlight: #48c7f3;
 $lightBlue: #e3f7ff;
 $mobile: 756px;
 $desktopContainer: 1300px;
 $dmSans: var(--font-dmSans);
+$roboto: var(--font-roboto);
 
 :export {
   background: $background;
@@ -17,9 +19,11 @@ $dmSans: var(--font-dmSans);
   whiteColor: $white-color;
   whiteColor75: $white-color-75;
   whiteColor09: $white-color-09;
+  gray-color: $gray-color;
   highlight: $highlight;
   lightBlue: $lightBlue;
   mobile: $mobile;
   desktopContainer: $desktopContainer;
   dmSans: $dmSans;
+  roboto: $roboto;
 }
