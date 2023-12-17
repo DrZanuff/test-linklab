@@ -1,2 +1,1 @@
-/* Instruments */
-export { counterSlice, desktopHeaderSlice, mobileHeaderSlice } from './slices'
+export { desktopHeaderSlice, mobileHeaderSlice } from './slices'
