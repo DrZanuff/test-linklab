@@ -1,5 +1,5 @@
-/* Components */
-import { Providers } from '@/lib/providers'
+import { ReactQueryProvider } from './providers'
+import { ReduxProviders } from '@/lib/providers'
 import { HeaderContainer } from './components/header/HeaderContainer'
 import { DM_Sans, Roboto } from 'next/font/google'
 import styles from './styles/layout.module.scss'
@@ -20,15 +20,17 @@ const roboto = Roboto({
 
 export default function RootLayout(props: React.PropsWithChildren) {
   return (
-    <Providers>
+    <ReduxProviders>
       <html lang="pt-BR" className={`${dmSans.variable} ${roboto.variable}`}>
-        <body className={styles.app}>
-          <section className={styles.container}>
-            <HeaderContainer />
-            <main className={styles.main}>{props.children}</main>
-          </section>
-        </body>
+        <ReactQueryProvider>
+          <body className={styles.app}>
+            <section className={styles.container}>
+              <HeaderContainer />
+              <main className={styles.main}>{props.children}</main>
+            </section>
+          </body>
+        </ReactQueryProvider>
       </html>
-    </Providers>
+    </ReduxProviders>
   )
 }
