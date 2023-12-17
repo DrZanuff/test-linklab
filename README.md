@@ -1,6 +1,7 @@
 # Halogenn - Página Inicial Responsiva
 
 Esta é uma página inicial responsiva desenvolvida para uma empresa que comercializa produtos químicos e acessórios, como parte de um teste freelancer.
+![image](https://github.com/DrZanuff/test-linklab/assets/23051495/551a4de0-c187-46da-a9c1-01db407d27e2)
 
 ## Tecnologias Utilizadas
 
